@@ -12,39 +12,69 @@ header {
     flex: 1; 
 }
 
-.one {
+.one-left {
     height: 100px;
     background-color: white;
     text-align: right;
     color: rgba(181,181,181);
 }
 
-.picture {
+.box-picture {
     background-color: white;
     transform: scale(0.5, 0.5);
     -ms-transform: scale(0.5, 0.5);
     -webkit-transform: scale(0.5, 0.5);
 }
 
-.two {
-
+.two-left {
     background-color: rgba(85, 203, 129);
-    flex-grow: 1;
-    display: flex;
-    justify-content: left;
-    align-items: center;
+    grid-column: 2;
+    grid-row: 4;
 
 }
 
-.three {
-    background-color: rgba(75,180,115);
-    display: flex;
-    justify-content: ;
-    align-items: center;
-    padding: 10px;
+.three-left {
+    background-color: rgba(75,180,115); 
+    grid-column: 3;
+    grid-row: 4;
 
 }
 
 nav {
     flex: 5;
+    background-color: rgba(241,241,241)
 }
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    padding: 100, 100, 0, 0;
+    
+  }
+  .one {
+    font-size: 20px;
+    grid-column: 1 / 3;
+    grid-row: 1;
+    background-color: rgba(241,241,241);
+    
+    
+  }
+  .two {
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+  }
+  .three {
+    grid-column: 1;
+    grid-row: 2 / 5;
+  }
+  .four {
+    grid-column: 3;
+    grid-row: 3;
+  }
+  .five {
+    display: flex;
+    justify-content:flex-start;
+  }
+    
