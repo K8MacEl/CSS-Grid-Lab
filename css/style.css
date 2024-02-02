@@ -14,11 +14,13 @@ body {
   font-family: Helvetica;
   margin: 200px;
   height: 150px;
+  width: 600px;
   
 }
 
 .one-left {
   height: 100px;
+  font-size: 30px;
   background-color: white;
   text-align: right;
   color: rgba(181,181,181);
@@ -26,44 +28,71 @@ body {
 
 
 .box-picture {
+  image-rendering: 20px;
   text-align: center;
-  background-color: white;
-  transform: scale(0.5, 0.5);
-  -ms-transform: scale(0.5, 0.5);
-  -webkit-transform: scale(0.5, 0.5);
-  border-color: rgba(85, 203, 129);
+  border: 15px solid rgba(85, 203, 129);
+  border-radius: 100%;
 } 
 
-.stars {
-  image-orientation: center;
-} 
+.box-picture img {
+  width: 100%;
+
+}
 
 .name {
   text-align: center;
+  font-size: 35px;
 }
+
+.stars {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(243,243,243);
+} 
 
 .title {
-  height: 100px;
-  background-color: white;
+  height: 50px;
   text-align: center;
-  color: rgba(181,181,181);
+  background-color: rgba(243,243,243);
 }  
 
-.lower {
+.rate {
+  height: 30px;
   text-align: center;
+  font-size: large;
 }
 
-.rate {
-  text-align: center;
+footer {
+  display: inline-flex;
 }
 
 .two-left {
-    background-color: rgba(85, 203, 129);
-    text-align: left;
+  width: 300px;
+  height: 100px;
+  background-color: rgba(85, 203, 129);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.two-left > img {
+
+  width: 75px;
+  height: 75px;
+  
 }
 
 .three-left {
-    background-color: rgba(75,180,115); 
-    
+  width: 300px;
+  height: 100px;
+  background-color: rgba(75,180,115); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.three-left > img {
+  width: 75px; 
+  height: 75px;
 }
